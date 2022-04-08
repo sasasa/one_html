@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>One HTML</title>
+</head>
+<body>
+  <input type="radio" class="naviradio" id="nav1" name="navi-menu" value="#home" checked>
+  <input type="radio" class="naviradio" id="nav2" name="navi-menu" value="#about">
+  <input type="radio" class="naviradio" id="nav3" name="navi-menu" value="#product">
+  <input type="radio" class="naviradio" id="nav4" name="navi-menu" value="#contact"> 
+
+  <header class="sticky">
+    <h3><a href="">Site</a></h3>
+    <nav>
+      <label class="navi-item" for="nav1">Home</label>
+      <label class="navi-item" for="nav2">About</label>
+      <label class="navi-item" for="nav3">Product</label>
+      <label class="navi-item" for="nav4">Contact</label>
+    </nav>
+  </header>
+
+  <div class="drawer-menu sticky">
+    <div id="sp-icon" class="sp-close"><span></span></div>
+    <ul id="navi-menu">
+      <li><label class="navi-item-sp" for="nav1">Home</label></li>
+      <li><label class="navi-item-sp" for="nav2">About</label></li>
+      <li><label class="navi-item-sp" for="nav3">Product</label></li>
+      <li><label class="navi-item-sp" for="nav4">Contact</label></li>
+    </ul>
+  </div>
+
+  <article class="main-content" id="home">
+    <h1>Home</h1>
+
+    <p>仕様、HTMLは1ファイルでスマホ、タブレット、PCサイトとして確認可能。flexやgridレイアウトを使用。SCSSとjavascript 201xを使うためビルド用にwebpackを利用。IE11対応して表示可能とする。勉強のためバニラJSしばりとする。</p>
+    <p>ソースコードの<a href="https://bitbucket.org/masasaeki/one_html/src/master/" target="_blank">リポジトリ</a>です。このサイトをポートフォリオとして機能させるために制作物をリンクする予定。お問い合わせお待ちしております。</p>
+  </article>
+
+  <article class="main-content" id="about">
+    <h1>About</h1>
+
+    <div class="container">
+      <div class="text loading gridbox" id="sidea"><div class="inner">名前</div></div>
+      <div class="text loading gridbox" id="contenta"><div class="inner">佐伯昌昭</div></div>
+      <div class="text loading gridbox" id="sideb"><div class="inner">趣味</div></div>
+      <div class="text loading gridbox" id="contentb"><div class="inner">筋トレ、プログラミング、散歩</div></div>
+      <div class="text loading gridbox" id="sidec"><div class="inner">住所</div></div>
+      <div class="text loading gridbox" id="contentc"><div class="inner">福岡市早良区</div></div>
+      <div class="text loading gridbox" id="sided"><div class="inner">電話番号</div></div>
+      <div class="text loading gridbox" id="contentd"><div class="inner">09012345678</div></div>
+    </div>
+  </article>
+
+  <article class="main-content" id="product">
+    <h1>Product</h1>
+    <div class="container">
+      <div class="flexitem">
+        <a href="https://sasasa.github.io/site/" target="_blank">
+        <figure class="wrapper-blur"><img class="effect-brightness" src="img/p1.webp" alt=""></figure>
+        </a>
+        <p>ドーは<br>ドーナツのドー、肩慣らしで作ったサイト</p>
+      </div>
+      <div class="flexitem">
+        <a href="https://sasasa.github.io/page/boot.html" target="_blank">
+        <figure class="wrapper-blur"><img class="effect-brightness" src="img/p2.webp" alt=""></figure>
+        </a>
+        <p>レーは<br>レモンのレー、Bootstrapで作ったサイト</p>
+      </div>
+      <div class="flexitem">
+        <a href="https://sasasa.github.io/blackjack/" target="_blank">
+        <figure class="wrapper-blur"><img class="effect-brightness" src="img/p3.webp" alt=""></figure>
+        </a>
+        <p>ミーは<br>みんなのミー、Vue.jsで作ったゲーム</p>
+      </div>
+      <div class="flexitem">
+        <a href="https://todolist-vue-front.herokuapp.com/" target="_blank">
+        <figure class="wrapper-blur"><img class="effect-brightness" src="img/p4.webp" alt=""></figure>
+        </a>
+        <p>ファーは<br>ファイトのファー、Vue.jsとRailsのSPAアプリ</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="main-content" id="contact">
+    <h1>Contact</h1>
+    <div class="container">
+      <div class="input-form"><input id="name" type="text" placeholder="Enter Your Name"></div>
+      <div class="input-form"><input id="email" type="email" placeholder="Enter Email"></div>
+      <div class="input-form"><textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Contact"></textarea></div>
+      <div class="input-form"><input type="submit" value="送信"></div>
+      <div class="confirmbox">
+        <span id="closebtn">&times;</span>
+        <div>以上でよろしければ送信してください。</div>
+        <div class="input-value">
+          <div>名前：</div>
+          <div id="namebox">さ〇き〇さ〇き</div>
+          <div>メールアドレス：</div>
+          <div id="emailbox">xxxxxxx@gmail.com</div>
+          <div>メッセージ：</div>
+          <div id="messagebox">ここはどんな文言でもいいですよ</div>
+        </div>
+        <div class="send"><input id="sendbox" type="button" value="送信"></div>
+      </div>
+      <div class="modal-loader">
+        <div class="loader-wrap">
+          <div class="loader"></div>
+          <p class="connecting">通信中…</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <footer>© 2019 HOGE PIYO Corp.</footer>
+</body>
+</html>

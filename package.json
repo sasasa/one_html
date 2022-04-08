@@ -1,0 +1,50 @@
+{
+  "name": "one_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "es6-promise": "^4.2.8",
+    "fetch-polyfill": "^0.8.2",
+    "object-fit-images": "^3.2.4",
+    "smoothscroll-polyfill": "^0.4.4",
+    "stickyfilljs": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.1.4",
+    "css-loader": "^3.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "json-server": "^0.15.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^2.2.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "start:dev": "webpack-dev-server --hot --inline --mode development",
+    "start:prod": "webpack-dev-server --hot --inline --mode production",
+    "json": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
